@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sample Website Layout</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link rel="stylesheet" href="additional-index.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>
+        window.onscroll = function() { 
+            document.body.style.backgroundPositionY = `${window.scrollY/2}px`;
+        }
+    </script>
+
+    <div class="aero-bar">
+        <img class="header-logo desktop" src="./testlogo.png"/>
+        <div class="vl desktop"></div>
+        <a href="https://www.google.com">Home</a>
+        <div class="vl"></div>
+        <a href="https://www.google.com">About</a>
+        <div class="vl"></div>
+        <a href="https://www.google.com">Services</a>
+        <div class="vl"></div>
+        <a href="https://www.google.com">Team</a>
+        <div class="vl"></div>
+        <a href="https://www.google.com">Contact</a>
+        <div class="vl desktop invisible"></div>
+    </div>
+
+    <div class='content-grid'>
+        <div class="aero-box about">
+            <h1>About</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor tellus non lorem ultricies, eget porta risus porta. Cras ullamcorper metus eget vulputate tristique. Sed massa mi, consequat vitae est ut, cursus posuere ligula. In et mauris at libero posuere tincidunt. Curabitur turpis massa, vestibulum vel dolor quis, gravida lobortis felis. Morbi viverra condimentum gravida. Cras vel enim in ante congue pharetra quis ut dolor. Nulla vel lectus a nisi commodo finibus. Curabitur blandit eu lorem at fringilla. Cras congue porttitor velit at faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum accumsan rutrum diam, et placerat justo porttitor non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis scelerisque arcu, eget pharetra diam. Suspendisse sodales justo id fringilla blandit.
+            </p>
+        </div>
+
+        <div class="aero-box left">
+            <h1>Example Heading</h1>
+            <p>Vestibulum ipsum urna, tristique vulputate accumsan nec, dignissim vitae lorem. Maecenas ultrices luctus quam, in pellentesque tellus imperdiet sed. Mauris at feugiat ipsum. Nullam id metus ligula. Duis tincidunt, nunc sed malesuada sollicitudin, risus erat aliquet risus, et tincidunt orci metus id risus. Sed auctor mi consequat consequat ultrices. Nam dui mi, molestie sit amet odio ut, pulvinar tempor nibh. Mauris arcu augue, dapibus sed elit in, tempor aliquet velit. Praesent eu quam at quam porttitor varius ut at dolor. Integer dapibus sit amet arcu ut pellentesque. In facilisis mollis orci, quis iaculis urna commodo sed. In convallis, dui nec fringilla consequat, felis mauris aliquam elit, sit amet luctus ex risus pellentesque enim.</p>
+        </div>
+        <div class="aero-box right">
+            <img src="https://www.pexels.com/photo/2662116/download/"/>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut in orci non justo blandit rutrum.</p>
+        </div>
+    </div>
+
+    <div style="height: 500px;"></div>
+
+    <div class="aero-footer">
+        <div class="footer-elems">
+            <div class="vl invisible"></div>
+            <a href="https://www.google.com">Home</a>
+            <div class="vl"></div>
+            <a href="https://www.google.com">About</a>
+            <div class="vl"></div>
+            <a href="https://www.google.com">Services</a>
+            <div class="vl"></div>
+            <a href="https://www.google.com">Team</a>
+            <div class="vl"></div>
+            <a href="https://www.google.com">Contact</a>
+            <div class="vl invisible"></div>
+        </div>
+        
+        <img class="footer-logo" src="./testlogo.png"/>
+        <p class="footer-copyright">© Copyright 2023, Your Company Name.</p>
+
+    </div>
+</body>
+</html>

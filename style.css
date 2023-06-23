@@ -1,0 +1,210 @@
+/* GENERAL STYLES */
+
+:root {
+    --main-color: rgba(83, 85, 87, 0.9);
+    --darker-color: rgba(15, 15, 15, 0.9);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+
+    background-image: url('./background.png');
+    background-size: cover;
+}
+
+p {
+    margin: 0px;
+
+    padding: 15px;
+
+    font-weight: lighter;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #E6E6E6;
+
+    text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.25);
+}
+
+h1, h2 {
+    margin: 0px;
+    text-align: left;
+
+    padding: 15px;
+
+    font-weight: lighter;
+
+    color: #FAFAFA;
+
+    filter: drop-shadow(0px -2px 1px rgba(0, 0, 0, 0.25));
+    font-size: 2em;
+}
+    /* Only difference with h2 is the different font size, define that here */
+    h2 {
+        font-size: 1.5em;
+    }
+
+.invisible {
+    opacity: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+/* HEADER STYLES */
+
+.aero-bar {
+    overflow: hidden;
+
+    height: 56px;
+    width: auto;
+
+    margin: 15px;
+    border-radius: .5em;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    background: linear-gradient(180deg, rgba(99, 102, 104, 0.9) 0%, rgba(69, 71, 71, 0.9) 50%, rgba(52, 52, 52, 0.9) 52.5%, rgba(0, 0, 0, 0.9) 100%);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.header-logo {
+    padding: 0.5em 0px 0.5em 0.5em;
+}
+
+.aero-bar > .vl:first-of-type {
+    margin-left: auto;
+}
+.aero-bar > a {
+    margin: auto;
+    font-size: 1.5em;
+
+    color: #E6E6E6;
+
+    text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.25);
+}
+    .aero-bar > a:hover, a:active {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #E6E6E6;
+    }
+
+.vl {
+    width: 1px;
+    height: 2em;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.225) 0%, rgba(255, 255, 255, 0.18) 35.94%, rgba(255, 255, 255, 0.27) 100%);
+    box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* CONTENT STYLES */
+
+.tile {
+    border-radius: 7px;
+
+    background-image: 
+        url('./gloss.png'),
+        linear-gradient(180deg, rgba(63, 66, 66, 0.1) 0%, rgba(245, 250, 255, 0.1) 100%),
+        url('./testlogo.png');
+        
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    aspect-ratio: 1/1;
+
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.aero-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: left;
+    border-radius: .5em;
+
+    background-image: linear-gradient(180deg, var(--main-color) 0%, var(--darker-color) 100%);
+
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.aero-button {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    translate: -50% 0;
+
+    border-radius: .5em;
+
+    background: linear-gradient(180deg, #343434 0%, #1F1F1F 50%, #3D3D3D 100%);
+
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER STYLES */
+
+.aero-footer {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    margin: auto;
+
+    margin-top: 15px;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0px;
+
+    background: linear-gradient(180deg, rgba(99, 102, 104, 0.9) 0%, rgba(69, 71, 71, 0.9) 50%, rgba(52, 52, 52, 0.9) 52.5%, rgba(0, 0, 0, 0.9) 100%);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.footer-elems {
+    display: flex; 
+    padding-top: 0.75em; 
+    padding-bottom: 1em;
+}
+
+.footer-elems > a {
+    margin: auto;
+    font-size: 1.5em;
+
+    color: #E6E6E6;
+
+    text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.25);
+}
+    .footer-elems > a:hover, a:active {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #E6E6E6;
+    }
+
+.footer-logo {
+    margin: auto; 
+    width: 25%; 
+    padding-bottom: 1em;
+}
+
+.footer-copyright {
+    text-align: center; 
+    padding-top: 0px; 
+    color: gray;
+}
